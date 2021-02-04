@@ -1,0 +1,23 @@
+ {% extends "base.html" %}
+{% block content %}
+ <form action="" method="POST" class="ui form">
+
+      {% csrf_token %}
+<label>Carbon_Monoxide</label>
+<input type="number" name="a">
+<label>NOx</label>
+<input type="number" name="b">
+<label>SOx</label>
+<input type="number" name="c">
+<label>Ozone</label>
+<input type="number" name="d">
+<label>Particulate_Matter</label>
+<input type="number" name="e">
+<label>SOx</label>
+<input type="number" name="f">
+<button class="ui primary button" type="submit"> Submit  </button>
+</form>
+<div style="margin-left: -5%;margin-right: -5%;margin-top: 5%;">
+{% include 'footer.html' %} 
+</div>
+{% endblock  %}
