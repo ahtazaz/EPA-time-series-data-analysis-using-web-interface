@@ -141,3 +141,7 @@ def newsdata(request):
         new.save()
         return redirect('index')
     return render(request,'news.html')
+
+@login_required
+def waterdata(request):
+    return render(request,'getwater.html')
